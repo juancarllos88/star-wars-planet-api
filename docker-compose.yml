@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  
+  mysql:
+    container_name: mysql
+    image: mysql
+    volumes:
+      - dbteste:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: starwars
+      MYSQL_USER: starwars
+      MYSQL_PASSWORD: starwars
+
+volumes:
+  dbteste:      
