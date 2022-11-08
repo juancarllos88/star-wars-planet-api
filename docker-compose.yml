@@ -2,8 +2,8 @@ version: '3.3'
 
 services:
   
-  mysql:
-    container_name: mysql
+  mysql-planet-starwars:
+    container_name: mysql-planet-starwars
     image: mysql
     volumes:
       - dbteste:/var/lib/mysql
